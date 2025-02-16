@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創意工夫Advanced</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>創意工夫上級提案</h1>
+    <main>
+        
+        <form id="improvementForm" >
+            <div class="inline-form">
+                <div class="form-group">
+                    <label for="name">氏名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">所属部署</label>
+                    <input type="text" id="department" name="department" required>
+                </div>
+                <div class="form-group">
+                    <label for="employee_code">人名コード</label>
+                    <input type="text" id="employee_code" name="employee_code" required>
+                </div>
+                <div class="form-group">
+                    <label for="suggest_Number">提案No.</label>
+                    <input type="text" id="suggest_Number"  name="suggest_Number" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="title">題名(工程または作業名を含めて記入してください)</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="before-after">
+                <div class="before">
+                    <h2>改善前</h2>
+                    <div class="form-group">
+                        <label for="before">今までのやり方とどういう状態で何が問題かを<br>簡潔に記入してください</label>
+                        <textarea id="before" name="before" rows="8" cols="50" required></textarea>
+                    </div>
+                </div>
+                <div class="after">
+                    <h2>改善後</h2>
+                    <div class="form-group">
+                        <label for="after">改善の後に何がどのように変わったかを<br>簡潔に記入してください</label>
+                        <textarea id="after" name="after" rows="8" cols="50" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Effect">効果記入欄</label>
+                <input type="text" id="Effect" placeholder="HR=2400円/H・1ヶ月の日数=20日" name="Effect" required>
+            </div>
+
+            <div class="form-group">
+                <label for="safe">安全</label>
+                <select id="safe" name="safe">
+                    <option value="warning">注意喚起：表示や喚起で気付かせる化</option>
+                    <option value="limit">行動制限・変化：物理的対策で危険を視覚化</option>
+                    <option value="liskdown1">リスクレベルを１下げた</option>
+                    <option value="other">なし</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quality">品質</label>
+                <select id="quality" name="quality">
+                    <option value="thirty">品質不良を30%低減</option>
+                    <option value="fifty">品質不良を50%低減</option>
+                    <option value="eighty">品質不良を80%低減</option>
+                    <option value="success">0件が1ヶ月以上継続中</option>
+                    <option value="noquality">なし</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="working">前屈・そんきょ姿勢・挙上姿勢・歩行</label>
+                <select id="working" name="working">
+                    <option value="2seconds">2秒低減/サイクル</option>
+                    <option value="4seconds">4秒低減/サイクル</option>
+                    <option value="6seconds">6秒低減/サイクル</option>
+                    <option value="noSecond">なし</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="weightHeight">重量物(5kg以上)・段差(15cm以上の昇降回数)</label>
+                <select id="weightHeight" name="weightHeight">
+                    <option value="oneTime">１回低減/サイクル</option>
+                    <option value="twoTime">２回低減/サイクル</option>
+                    <option value="threeTime">３回低減/サイクル</option>
+                    <option value="noTime">なし</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="priority">その他</label>
+                <select id="priority" name="priority">
+                    <option value="high">個人提案</option>
+                    <option value="medium">QCサークル提案</option>
+                    <option value="low">研修で提案(自主研、OJT)</option>
+                </select>
+            </div>
+
+            <input type="submit" value="提出">
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
